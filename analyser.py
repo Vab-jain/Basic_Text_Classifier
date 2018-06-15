@@ -193,4 +193,10 @@ testing_featuresets = [find_features(rev1) for (rev1) in real_testing_set]
 with open("results_testdata.txt","a") as file:
 	for i,real_testing_set_element in enumerate(testing_featuresets):
 		file.write("Text: {0}\tClassification: {1}\tConfidence %: {2}\n".format(real_testing_set[i], best_classifier.classify(real_testing_set_element), best_classifier.confidence(real_testing_set_element)*100))
+<<<<<<< HEAD
 		# print("Classification:",best_classifier.classify(real_testing_set_element),"Confidence %:\n", best_classifier.confidence(real_testing_set_element)*100)
+||||||| merged common ancestors
+		print("Classification:",best_classifier.classify(real_testing_set_element),"Confidence %:\n", best_classifier.confidence(real_testing_set_element)*100)
+=======
+		# print("Classification:",best_classifier.classify(real_testing_set_element),"Confidence %:\n", best_classifier.confidence(real_testing_set_element)*100)
+>>>>>>> 24bf7cfba3b08bc8c18513b642fd872538db0df8
